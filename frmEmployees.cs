@@ -34,8 +34,8 @@ namespace MiniCursoKaizen
 
             string sqlstring = "";
             dv.RowFilter = sqlstring;
-            sqlstring = $"[LastName] Like '{filter}%'";
-            sqlstring = sqlstring + $" Or [FirstName] Like '{filter}%'";
+            sqlstring = $"[LastName] LIKE '{filter}%'";
+            sqlstring = sqlstring + $" OR [FirstName] LIKE '{filter}%'";
             dv.RowFilter = sqlstring;
 
         }
