@@ -22,8 +22,8 @@ namespace MiniCursoKaizen
             //asignación de resultados al datatable
             DataTable dt = new DataTable();
             da.Fill(dt);
-            grdEmployees.DataSource = dt.DefaultView; //asignación del dt a la grilla
             dv = dt.DefaultView; //asignación del dt a dv
+            grdEmployees.DataSource = dv; //asignación del dv a la grilla
         }
         private void txtSearch_KeyUp(object sender, KeyEventArgs e)
         {
