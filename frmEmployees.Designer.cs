@@ -42,7 +42,7 @@ namespace MiniCursoKaizen
             this.txtSearch.BackColor = System.Drawing.Color.White;
             this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSearch.Location = new System.Drawing.Point(16, 39);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(303, 22);
             this.txtSearch.TabIndex = 0;
@@ -61,18 +61,21 @@ namespace MiniCursoKaizen
             // grdEmployees
             // 
             this.grdEmployees.AllowUserToAddRows = false;
-            this.grdEmployees.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.grdEmployees.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdEmployees.Location = new System.Drawing.Point(15, 77);
-            this.grdEmployees.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grdEmployees.Location = new System.Drawing.Point(13, 69);
+            this.grdEmployees.Margin = new System.Windows.Forms.Padding(4);
             this.grdEmployees.Name = "grdEmployees";
             this.grdEmployees.ReadOnly = true;
+            this.grdEmployees.RowHeadersVisible = false;
             this.grdEmployees.RowHeadersWidth = 51;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
             this.grdEmployees.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.grdEmployees.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdEmployees.Size = new System.Drawing.Size(1392, 486);
             this.grdEmployees.TabIndex = 2;
+            this.grdEmployees.TabStop = false;
             // 
             // frmEmployees
             // 
@@ -86,7 +89,7 @@ namespace MiniCursoKaizen
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSearch);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmEmployees";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employees";
