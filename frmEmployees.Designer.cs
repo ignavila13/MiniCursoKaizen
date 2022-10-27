@@ -46,7 +46,7 @@ namespace MiniCursoKaizen
             this.txtSearch.Location = new System.Drawing.Point(13, 30);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(245, 22);
+            this.txtSearch.Size = new System.Drawing.Size(245, 19);
             this.txtSearch.TabIndex = 0;
             this.txtSearch.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtSearch_KeyUp);
             // 
@@ -57,7 +57,7 @@ namespace MiniCursoKaizen
             this.label1.Location = new System.Drawing.Point(13, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 17);
+            this.label1.Size = new System.Drawing.Size(51, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Search:";
             // 
@@ -94,7 +94,7 @@ namespace MiniCursoKaizen
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1662, 576);
             this.Controls.Add(this.grdEmployees);
             this.Controls.Add(this.label1);
